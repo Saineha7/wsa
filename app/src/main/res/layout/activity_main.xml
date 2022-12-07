@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <fragment
+        android:id="@+id/fragment_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/activity_login" />
+
+    <EditText
+        android:id="@+id/startAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="From"
+        android:layout_alignStart="@id/fragment_map"
+        android:background="@color/three"
+        android:textColorHint="@color/one"
+        android:textColor="@color/one"
+        />
+
+    <EditText
+        android:id="@+id/destinationAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/startAddress"
+        android:layout_alignParentStart="true"
+        android:background="@color/three"
+        android:textColorHint="@color/one"
+        android:textColor="@color/one"
+        android:hint="To" />
+
+    <TextView
+        android:id="@+id/routeInfo"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="45dp"
+        android:background="@color/one"
+        android:padding="6dp"
+        android:scrollbars="vertical"
+        android:text="No Route Info Provided"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textStyle="bold|italic"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textColor="@color/one"
+        android:backgroundTint="@color/blue"
+        android:layout_alignEnd="@id/fragment_map"
+        />
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:textColor="@color/one"
+        android:backgroundTint="@color/blue"
+        android:layout_below="@id/searchBtn"
+        android:layout_alignEnd="@id/fragment_map"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/idStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/app_name"
+        android:padding="4dp"
+        app:fabSize="normal"
+        app:backgroundTint="@color/blue"
+        android:layout_alignParentRight="true"
+        android:tint="@color/sos"
+        android:src="@drawable/ic_baseline_location_off_24"
+        android:layout_above="@id/idStart"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/idStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/app_name"
+        android:padding="4dp"
+        app:fabSize="normal"
+        app:backgroundTint="@color/blue"
+        android:layout_alignParentRight="true"
+        android:tint="@color/green"
+        android:src="@drawable/ic_baseline_share_location_24"
+        android:layout_above="@id/idFABFeedback"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/idFABFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/app_name"
+        android:padding="4dp"
+        android:src="@drawable/ic_baseline_feedback_24"
+        android:tint="@color/one"
+        app:backgroundTint="@color/blue"
+        app:fabSize="normal" />
+
+
+
+    <!--        android:src="@drawable/ic_home"-->
+<!--        app:backgroundTint="@color/purple_200"-->
+<!--        app:tint="@color/white" -->
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/sheet"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:alpha="0.9"
+            android:background="@drawable/rounded"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+            <ImageView
+                android:id="@+id/swipeBar"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_remove_24"
+                app:tint="@color/one" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="50dp">
+
+                <TextView
+                    android:id="@+id/sheetTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Steps will be displayed here on search."
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/one"
+                    android:textColorHint="@color/one" />
+            </androidx.core.widget.NestedScrollView>
+        </FrameLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

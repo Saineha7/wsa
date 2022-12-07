@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/one"
+        tools:context=".MainActivity">
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+            android:textSize="22sp"
+            android:textColorHint="@color/blue"
+            android:layout_margin="20sp"/>
+        <EditText
+            android:id="@+id/area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Area"
+            android:textSize="22sp"
+            android:textColorHint="@color/blue"
+            android:layout_margin="20sp"/>
+        <EditText
+            android:id="@+id/zone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Zone"
+            android:textSize="22sp"
+            android:textColorHint="@color/blue"
+            android:layout_margin="20sp"/>
+        <EditText
+            android:id="@+id/pc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="is_there_a_police_station"
+            android:textSize="22sp"
+            android:textColorHint="@color/blue"
+            android:layout_margin="20sp"/>
+        <EditText
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:textSize="22sp"
+            android:textColorHint="@color/blue"
+            android:hint="Is there a bar"/>
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:textSize="22sp"
+            android:textColorHint="@color/blue"
+            android:hint="Enter Time(Morning/Noon/Evening/Night)"/>
+        <EditText
+            android:id="@+id/pf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:textSize="22sp"
+            android:textColorHint="@color/blue"
+            android:hint="Enter People Frequency"/>
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:text="Submit"
+            android:background="@color/blue"
+            android:textColor="@color/one"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+</ScrollView>

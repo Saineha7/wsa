@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wsa_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/userProfileTb"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:title="                           User Profile"-->
+<!--        android:background="@color/three"-->
+<!--        app:titleTextColor="@color/one"-->
+<!--        android:gravity="center"-->
+<!--        android:textAlignment="center"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+    <TextView
+        android:id="@+id/emergencyContactsTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Profile - Emergency Contacts"
+        android:textSize="27sp"
+        android:textColor="@color/black"
+        android:background="@color/sosLight"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/contactTv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/emergencyContactsTv"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+    <TextView
+        android:id="@+id/contactTv1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emergencyContactsTv"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="22dp"
+        android:hint=" Emergency contact 1"
+        android:textColor="@color/one"
+        android:layout_width="match_parent"
+        android:drawableRight="@drawable/ic_baseline_edit_24"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:layout_marginEnd="25dp"
+        android:textColorHint="@color/blue"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/contactTv2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contactTv1"
+        android:textColor="@color/one"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="22dp"
+        android:hint=" Emergency contact 2"
+        android:layout_width="match_parent"
+        android:drawableRight="@drawable/ic_baseline_edit_24"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:layout_marginEnd="25dp"
+        android:textColorHint="@color/blue"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/contactTv3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contactTv2"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="22dp"
+        android:hint=" Emergency contact 3"
+        android:layout_width="match_parent"
+        android:textColor="@color/one"
+        android:drawableRight="@drawable/ic_baseline_edit_24"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:layout_marginEnd="25dp"
+        android:textColorHint="@color/blue"
+        android:layout_height="wrap_content"/>
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/contactTv1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="43dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:drawableRight="@drawable/ic_baseline_edit_24"-->
+<!--        android:hint="Emergency Contact1        "-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/contactTv"-->
+<!--        android:gravity="center_vertical"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/contactEt1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Emergency Contact1        "-->
+<!--        android:drawableRight="@drawable/ic_baseline_done_24"-->
+<!--        android:visibility="invisible"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/contactTv1"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/contactTv2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="43dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:drawableRight="@drawable/ic_baseline_edit_24"-->
+<!--        android:hint="Emergency Contact2        "-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/contactEt1"-->
+<!--        android:gravity="center_vertical"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/contactEt2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Emergency Contact2        "-->
+<!--        android:visibility="invisible"-->
+<!--        android:drawableRight="@drawable/ic_baseline_done_24"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/contactTv3"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/contactTv2"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/contactTv3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="43dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:drawableRight="@drawable/ic_baseline_edit_24"-->
+<!--        android:hint="Emergency Contact3        "-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/contactEt2"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        android:gravity="center_vertical"-->
+<!--         />-->
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/contactEt3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Emergency Contact3        "-->
+<!--        android:visibility="invisible"-->
+<!--        android:drawableRight="@drawable/ic_baseline_done_24"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/contactTv3"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/smsBtn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:backgroundTint="@color/three"-->
+<!--        android:text="Share Location"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/contactTv3" />-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addContactFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_baseline_person_add_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

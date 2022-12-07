@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "464852515622",
+    "project_id": "my-application-53541",
+    "storage_bucket": "my-application-53541.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464852515622:android:1f25930f480a94ab981fe7",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464852515622-ndpci1dd2nr958fsh0mqneme0set7lsb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQrTWy7n6Mm_ZVgwrtsrbYJSmpDwkQmzk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464852515622-ndpci1dd2nr958fsh0mqneme0set7lsb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464852515622:android:9cb9d05e2c15044e981fe7",
+        "android_client_info": {
+          "package_name": "com.livinideas.googlemapsdirectionsample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464852515622-ndpci1dd2nr958fsh0mqneme0set7lsb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQrTWy7n6Mm_ZVgwrtsrbYJSmpDwkQmzk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464852515622-ndpci1dd2nr958fsh0mqneme0set7lsb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
