@@ -51,8 +51,7 @@ class HomePage : AppCompatActivity() {
         findViewById<Button>(R.id.sosBtn).setOnClickListener() {
             val callIntent = Intent(Intent.ACTION_CALL)
             // Call to women helpline - 1091
-            // callIntent.data = Uri.parse("tel:1091")
-             callIntent.data = Uri.parse("tel:9962130932")
+             callIntent.data = Uri.parse("tel:1091")
             this.startActivity(callIntent)
         }
     }
