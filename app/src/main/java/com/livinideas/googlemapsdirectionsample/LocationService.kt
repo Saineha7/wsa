@@ -80,7 +80,7 @@ class LocationService: Service() {
                          "Location Coordinates:($lat,$lng)"
                     )
                     notificationManager.notify(1, updates.build())
-                    var phno = "9361038746"
+                    var phno = ""
                     val message = "Hi this is my location 📍: ( $lat , $lng )"
                     var i = 1
                     while (i in 1..3) {
