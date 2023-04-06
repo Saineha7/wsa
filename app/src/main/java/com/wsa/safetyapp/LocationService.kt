@@ -1,4 +1,4 @@
-package com.livinideas.googlemapsdirectionsample
+package com.wsa.safetyapp
 
 import android.app.NotificationManager
 import android.app.PendingIntent
@@ -6,13 +6,11 @@ import android.app.PendingIntent.FLAG_MUTABLE
 import android.app.Service
 import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import android.os.IBinder
 import android.telephony.SmsManager
 import android.util.Log
 import android.widget.Toast
 import androidx.core.app.NotificationCompat
-import androidx.core.app.ServiceCompat.stopForeground
 import com.google.android.gms.location.LocationServices
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

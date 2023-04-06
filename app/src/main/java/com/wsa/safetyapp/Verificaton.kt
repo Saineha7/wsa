@@ -1,14 +1,12 @@
-package com.livinideas.googlemapsdirectionsample
+package com.wsa.safetyapp
 
 import android.Manifest
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.opengl.Visibility
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
-import android.util.SparseArray
 import android.view.SurfaceHolder
 import android.view.View
 import android.widget.TextView
@@ -19,11 +17,9 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.google.android.gms.vision.CameraSource
 import com.google.android.gms.vision.Detector
-import com.google.android.gms.vision.text.Text
 import com.google.android.gms.vision.text.TextBlock
 import com.google.android.gms.vision.text.TextRecognizer
 import kotlinx.android.synthetic.main.activity_verification.*
-import kotlin.system.exitProcess
 
 class Verificaton : AppCompatActivity() {
     val keyResult: String = "key_result"

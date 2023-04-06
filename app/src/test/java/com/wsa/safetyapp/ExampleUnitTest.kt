@@ -1,4 +1,4 @@
-package com.livinideas.googlemapsdirectionsample
+package com.wsa.safetyapp
 
 import org.junit.Test
 

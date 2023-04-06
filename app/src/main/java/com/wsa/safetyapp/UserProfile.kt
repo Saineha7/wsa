@@ -1,35 +1,19 @@
-package com.livinideas.googlemapsdirectionsample
+package com.wsa.safetyapp
 
 import android.annotation.SuppressLint
 import android.app.Activity
-import android.app.AlertDialog
-import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import android.database.Cursor
-import android.net.Uri
-import android.opengl.Visibility
-import android.os.Build
 import android.os.Bundle
-import android.preference.PreferenceManager
 import android.provider.ContactsContract
-import android.telephony.SmsManager
 import android.util.Log
-import android.view.View
-import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.marginBottom
-import com.google.android.gms.flags.impl.SharedPreferencesFactory.getSharedPreferences
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlinx.android.synthetic.main.activity_userprofile.*
 import kotlinx.android.synthetic.main.activity_userprofile.view.*
-import org.checkerframework.checker.units.qual.Length
-import org.w3c.dom.Text
-import kotlin.math.log
 
 var count = 1
 var c1 = sharedpreferences.getString("c1p","")

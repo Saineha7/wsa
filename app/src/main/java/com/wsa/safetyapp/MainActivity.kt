@@ -1,4 +1,4 @@
-package com.livinideas.googlemapsdirectionsample
+package com.wsa.safetyapp
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -7,7 +7,6 @@ import android.content.pm.PackageManager
 import android.graphics.Color
 import android.location.Address
 import android.location.Geocoder
-import android.os.Build
 import android.os.Bundle
 import android.text.Html
 import android.text.Spannable

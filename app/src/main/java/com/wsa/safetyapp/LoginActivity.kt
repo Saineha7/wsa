@@ -1,14 +1,11 @@
-package com.livinideas.googlemapsdirectionsample
+package com.wsa.safetyapp
 
 import android.Manifest
-import android.content.Context
 import android.content.Intent
-import android.location.LocationManager
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
-import androidx.core.location.LocationManagerCompat.isLocationEnabled
 import kotlinx.android.synthetic.main.activity_login.*
 
 

@@ -1,4 +1,4 @@
-package com.livinideas.googlemapsdirectionsample
+package com.wsa.safetyapp
 
 import android.os.Bundle
 import android.util.Log
