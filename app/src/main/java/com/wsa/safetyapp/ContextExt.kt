@@ -1,9 +1,8 @@
-package com.livinideas.googlemapsdirectionsample
+package com.wsa.safetyapp
 
 import android.content.Context
 import android.content.pm.PackageManager
 import androidx.core.content.ContextCompat
-import java.util.jar.Manifest
 
 fun Context.hasLocationPermission():Boolean{
     return ContextCompat.checkSelfPermission(

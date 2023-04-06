@@ -1,4 +1,4 @@
-package com.livinideas.googlemapsdirectionsample
+package com.wsa.safetyapp
 
 import android.location.Location
 import kotlinx.coroutines.flow.Flow

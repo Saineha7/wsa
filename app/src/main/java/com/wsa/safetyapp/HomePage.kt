@@ -1,4 +1,4 @@
-package com.livinideas.googlemapsdirectionsample
+package com.wsa.safetyapp
 
 import android.content.Context
 import android.content.Intent
@@ -9,9 +9,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.location.LocationManagerCompat.isLocationEnabled
-import com.google.android.gms.flags.impl.SharedPreferencesFactory.getSharedPreferences
-import kotlinx.android.synthetic.main.activity_main.view.*
 
 lateinit var sharedpreferences: SharedPreferences
 
